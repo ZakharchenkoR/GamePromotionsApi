@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  gameapidb:
+    image: postgres
+
+  pgadmin:
+    image: dpage/pgadmin4
+
+  gamepromotion.api:
+    image: ${DOCKER_REGISTRY-}gamepromotionapi
+    build:
+      context: .
+      dockerfile: Api/GamePromotion/GamePromotion.API/Dockerfile
+
+volumes:
+  postgres_data:
+  pgadmin_data:
