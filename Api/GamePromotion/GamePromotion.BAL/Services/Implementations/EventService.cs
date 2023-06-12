@@ -26,7 +26,7 @@ namespace GamePromotion.BAL.Services.Implementations
             var newEvent = _mapper.Map<Event>(evnt);
             await _unitOfWork.EventRepository.AddEvent(newEvent);
             await _unitOfWork.SaveAsync();
-            _logger.LogError($"Event with id:{newEvent.id} was successfully created");
+            _logger.LogInformation($"Event with id:{newEvent.id} was successfully created");
             return _mapper.Map<EventModel>(newEvent);
         }
 

@@ -26,7 +26,7 @@ namespace GamePromotion.BAL.Services.Implementations
             var newOffer = _mapper.Map<Offer>(offer);
             await _unitOfWork.OfferRepository.AddOffer(newOffer);
             await _unitOfWork.SaveAsync();
-            _logger.LogError($"Offer with id:{newOffer.id} was successfully created");
+            _logger.LogInformation($"Offer with id:{newOffer.id} was successfully created");
             return _mapper.Map<OfferModel>(newOffer);
         }
 
