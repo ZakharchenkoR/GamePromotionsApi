@@ -7,13 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{19FFD608-7E8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GamePromotion", "GamePromotion", "{CED2CD01-6BB3-4ED9-AE2F-C1434532E106}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePromotion.DAL", "Api\GamePromotion\GamePromotion.DAL\GamePromotion.DAL.csproj", "{97D9A332-397B-4319-A958-EE928CB05BA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamePromotion.DAL", "Api\GamePromotion\GamePromotion.DAL\GamePromotion.DAL.csproj", "{97D9A332-397B-4319-A958-EE928CB05BA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePromotion.BAL", "Api\GamePromotion\GamePromotion.BAL\GamePromotion.BAL.csproj", "{9C843729-B965-457C-84DD-68539A28E901}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamePromotion.BAL", "Api\GamePromotion\GamePromotion.BAL\GamePromotion.BAL.csproj", "{9C843729-B965-457C-84DD-68539A28E901}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePromotion.API", "Api\GamePromotion\GamePromotion.API\GamePromotion.API.csproj", "{697293EB-8850-4354-ABC8-099C0DD791E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamePromotion.API", "Api\GamePromotion\GamePromotion.API\GamePromotion.API.csproj", "{697293EB-8850-4354-ABC8-099C0DD791E2}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D5ADA94B-3F0E-441A-ABA0-BEC4AA297A36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4C097417-E1EB-4023-871B-1FCA127802AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTests", "Tests\NUnitTests\NUnitTests.csproj", "{DF700EE7-1270-4610-93B4-E89A3C0FBEA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,10 @@ Global
 		{D5ADA94B-3F0E-441A-ABA0-BEC4AA297A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5ADA94B-3F0E-441A-ABA0-BEC4AA297A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5ADA94B-3F0E-441A-ABA0-BEC4AA297A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF700EE7-1270-4610-93B4-E89A3C0FBEA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF700EE7-1270-4610-93B4-E89A3C0FBEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF700EE7-1270-4610-93B4-E89A3C0FBEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF700EE7-1270-4610-93B4-E89A3C0FBEA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,7 @@ Global
 		{97D9A332-397B-4319-A958-EE928CB05BA5} = {CED2CD01-6BB3-4ED9-AE2F-C1434532E106}
 		{9C843729-B965-457C-84DD-68539A28E901} = {CED2CD01-6BB3-4ED9-AE2F-C1434532E106}
 		{697293EB-8850-4354-ABC8-099C0DD791E2} = {CED2CD01-6BB3-4ED9-AE2F-C1434532E106}
+		{DF700EE7-1270-4610-93B4-E89A3C0FBEA3} = {4C097417-E1EB-4023-871B-1FCA127802AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90D9D593-FE37-4CCA-8273-333F6AE30670}
