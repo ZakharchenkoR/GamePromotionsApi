@@ -26,5 +26,10 @@ namespace GamePromotion.DAL.Infrastructure
             _context.Dispose();
             GC.SuppressFinalize(this);
         }
+
+        ~UnitOfWork()
+        {
+            _context.Dispose();
+        }
     }
 }
